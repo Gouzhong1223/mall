@@ -1,6 +1,12 @@
 package com.gouzhong1223.mall.mapper;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.gouzhong1223.mall.pojo.PmsBrand;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 /**
  * @Author : Gouzhong
@@ -25,4 +31,31 @@ public interface PmsBrandMapper {
     int updateByPrimaryKeySelective(PmsBrand record);
 
     int updateByPrimaryKey(PmsBrand record);
+
+    PmsBrand selectOneByName(@Param("name") String name);
+
+    List<PmsBrand> selectByName(@Param("name") String name);
+
+    @Select("select * from mall.pms_brand")
+    List<PmsBrand> selectAllBrand();
+
+    /**
+     * 更改厂家模式
+     *
+     * @param id            品牌id
+     * @param factoryStatus 1为显示 0为不显示
+     * @return
+     */
+    @Update("update pms_brand set factory_status = #{factoryStatus} where id = #{id}")
+    int updateFactoryStatus(Long id, Integer factoryStatus);
+
+    /**
+     * 更改显示模式
+     *
+     * @param id         品牌id
+     * @param showStatus 1为显示 0为不显示
+     * @return
+     */
+    @Update("update pms_brand set show_status = #{showStatus} where id = #{id}")
+    int updateShowStatus(Long id, Integer showStatus);
 }

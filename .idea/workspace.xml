@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ff547e19-3c01-47f8-b7d1-7cf3e64456b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gouzhong1223/mall/mapper/PmsBrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gouzhong1223/mall/mapper/PmsBrandMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gouzhong1223/mall/services/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gouzhong1223/mall/services/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CmsHelpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CmsHelpMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/OmsOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OmsOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PmsBrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PmsBrandMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577543303321</updated>
-      <workItem from="1577543311522" duration="2164000" />
+      <workItem from="1577543311522" duration="3585000" />
     </task>
     <task id="LOCAL-00001" summary="新建项目">
       <created>1577543680779</created>
@@ -130,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577543680779</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update-&gt;完善基础服务">
+      <created>1577545503366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577545503366</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +147,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新建项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="新建项目" />
+    <MESSAGE value="update-&gt;完善基础服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="update-&gt;完善基础服务" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="127" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577544289777">
@@ -149,18 +159,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="533" y="178" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1577545452555" />
-    <state x="185" y="64" key="CommitChangelistDialog2" timestamp="1577543680526">
+    <state x="457" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1577546562759">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="185" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1577543680526" />
+    <state x="457" y="252" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.877@0.23.1440.877" timestamp="1577546562759" />
+    <state x="185" y="64" key="CommitChangelistDialog2" timestamp="1577545502937">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="185" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1577545502937" />
     <state x="221" y="100" key="SettingsEditor" timestamp="1577543374175">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1577543374175" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1577543726463">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1577545506203">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1577543726463" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1577545506203" />
     <state x="590" y="363" width="350" height="220" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1577544554761">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
