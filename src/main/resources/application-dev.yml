@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://cdb-ptjmt4tm.bj.tencentcdb.com:10118/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: Aabc123456789
+logging:
+  level:
+    root: info
+    com.gouzhong1223: debug
+  path: log/mall.log
+  file:
+    max-size: 10MB
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml

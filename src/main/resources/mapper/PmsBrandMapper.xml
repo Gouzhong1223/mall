@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gouzhong1223.mall.mapper.PmsBrandMapper">
+  <resultMap id="BaseResultMap" type="com.gouzhong1223.mall.pojo.PmsBrand">
+    <!--@mbg.generated-->
+    <!--@Table pms_brand-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="first_letter" jdbcType="VARCHAR" property="firstLetter" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="factory_status" jdbcType="INTEGER" property="factoryStatus" />
+    <result column="show_status" jdbcType="INTEGER" property="showStatus" />
+    <result column="product_count" jdbcType="INTEGER" property="productCount" />
+    <result column="product_comment_count" jdbcType="INTEGER" property="productCommentCount" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="big_pic" jdbcType="VARCHAR" property="bigPic" />
+    <result column="brand_story" jdbcType="LONGVARCHAR" property="brandStory" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, first_letter, sort, factory_status, show_status, product_count, product_comment_count, 
+    logo, big_pic, brand_story
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from pms_brand
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from pms_brand
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gouzhong1223.mall.pojo.PmsBrand" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into pms_brand (`name`, first_letter, sort, 
+      factory_status, show_status, product_count, 
+      product_comment_count, logo, big_pic, 
+      brand_story)
+    values (#{name,jdbcType=VARCHAR}, #{firstLetter,jdbcType=VARCHAR}, #{sort,jdbcType=INTEGER}, 
+      #{factoryStatus,jdbcType=INTEGER}, #{showStatus,jdbcType=INTEGER}, #{productCount,jdbcType=INTEGER}, 
+      #{productCommentCount,jdbcType=INTEGER}, #{logo,jdbcType=VARCHAR}, #{bigPic,jdbcType=VARCHAR}, 
+      #{brandStory,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gouzhong1223.mall.pojo.PmsBrand" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into pms_brand
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null and name != ''">
+        `name`,
+      </if>
+      <if test="firstLetter != null and firstLetter != ''">
+        first_letter,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="factoryStatus != null">
+        factory_status,
+      </if>
+      <if test="showStatus != null">
+        show_status,
+      </if>
+      <if test="productCount != null">
+        product_count,
+      </if>
+      <if test="productCommentCount != null">
+        product_comment_count,
+      </if>
+      <if test="logo != null and logo != ''">
+        logo,
+      </if>
+      <if test="bigPic != null and bigPic != ''">
+        big_pic,
+      </if>
+      <if test="brandStory != null and brandStory != ''">
+        brand_story,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null and name != ''">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="firstLetter != null and firstLetter != ''">
+        #{firstLetter,jdbcType=VARCHAR},
+      </if>
+      <if test="sort != null">
+        #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="factoryStatus != null">
+        #{factoryStatus,jdbcType=INTEGER},
+      </if>
+      <if test="showStatus != null">
+        #{showStatus,jdbcType=INTEGER},
+      </if>
+      <if test="productCount != null">
+        #{productCount,jdbcType=INTEGER},
+      </if>
+      <if test="productCommentCount != null">
+        #{productCommentCount,jdbcType=INTEGER},
+      </if>
+      <if test="logo != null and logo != ''">
+        #{logo,jdbcType=VARCHAR},
+      </if>
+      <if test="bigPic != null and bigPic != ''">
+        #{bigPic,jdbcType=VARCHAR},
+      </if>
+      <if test="brandStory != null and brandStory != ''">
+        #{brandStory,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gouzhong1223.mall.pojo.PmsBrand">
+    <!--@mbg.generated-->
+    update pms_brand
+    <set>
+      <if test="name != null and name != ''">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="firstLetter != null and firstLetter != ''">
+        first_letter = #{firstLetter,jdbcType=VARCHAR},
+      </if>
+      <if test="sort != null">
+        sort = #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="factoryStatus != null">
+        factory_status = #{factoryStatus,jdbcType=INTEGER},
+      </if>
+      <if test="showStatus != null">
+        show_status = #{showStatus,jdbcType=INTEGER},
+      </if>
+      <if test="productCount != null">
+        product_count = #{productCount,jdbcType=INTEGER},
+      </if>
+      <if test="productCommentCount != null">
+        product_comment_count = #{productCommentCount,jdbcType=INTEGER},
+      </if>
+      <if test="logo != null and logo != ''">
+        logo = #{logo,jdbcType=VARCHAR},
+      </if>
+      <if test="bigPic != null and bigPic != ''">
+        big_pic = #{bigPic,jdbcType=VARCHAR},
+      </if>
+      <if test="brandStory != null and brandStory != ''">
+        brand_story = #{brandStory,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gouzhong1223.mall.pojo.PmsBrand">
+    <!--@mbg.generated-->
+    update pms_brand
+    set `name` = #{name,jdbcType=VARCHAR},
+      first_letter = #{firstLetter,jdbcType=VARCHAR},
+      sort = #{sort,jdbcType=INTEGER},
+      factory_status = #{factoryStatus,jdbcType=INTEGER},
+      show_status = #{showStatus,jdbcType=INTEGER},
+      product_count = #{productCount,jdbcType=INTEGER},
+      product_comment_count = #{productCommentCount,jdbcType=INTEGER},
+      logo = #{logo,jdbcType=VARCHAR},
+      big_pic = #{bigPic,jdbcType=VARCHAR},
+      brand_story = #{brandStory,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
