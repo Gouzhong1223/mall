@@ -1,0 +1,128 @@
+2019-12-28 23:42:40.689  INFO 55963 --- [restartedMain] com.gouzhong1223.mall.MallApplication    : Starting MallApplication on localhost with PID 55963 (/Users/qingsong/Projects/IDEA/2020-01/mall/target/classes started by qingsong in /Users/qingsong/Projects/IDEA/2020-01/mall)
+2019-12-28 23:42:40.697 DEBUG 55963 --- [restartedMain] com.gouzhong1223.mall.MallApplication    : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-28 23:42:40.698  INFO 55963 --- [restartedMain] com.gouzhong1223.mall.MallApplication    : The following profiles are active: dev
+2019-12-28 23:42:40.791  INFO 55963 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-28 23:42:40.791  INFO 55963 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-28 23:42:41.975  INFO 55963 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-28 23:42:41.979  INFO 55963 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-28 23:42:42.025  INFO 55963 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2019-12-28 23:42:42.400  INFO 55963 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-28 23:42:42.760  INFO 55963 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-12-28 23:42:42.775  INFO 55963 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-28 23:42:42.775  INFO 55963 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-28 23:42:42.897  INFO 55963 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-28 23:42:42.897  INFO 55963 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2106 ms
+2019-12-28 23:42:43.937  INFO 55963 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-28 23:42:44.071  INFO 55963 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-28 23:42:44.114  INFO 55963 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-28 23:42:44.225  WARN 55963 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-12-28 23:42:44.749  INFO 55963 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-28 23:42:44.779  INFO 55963 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-28 23:42:44.822  INFO 55963 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-28 23:42:44.891  INFO 55963 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-12-28 23:42:44.895  INFO 55963 --- [restartedMain] com.gouzhong1223.mall.MallApplication    : Started MallApplication in 5.054 seconds (JVM running for 6.168)
+2019-12-28 23:44:09.525  INFO 55963 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-28 23:44:09.525  INFO 55963 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-28 23:44:09.538  INFO 55963 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-12-28 23:44:12.511  INFO 55963 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-28 23:44:13.189  INFO 55963 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-28 23:44:13.200 DEBUG 55963 --- [http-nio-8081-exec-1] c.g.m.m.UserMapper.selectUserByUsername  : ==>  Preparing: select * from ums_admin where username = ? 
+2019-12-28 23:44:13.225 DEBUG 55963 --- [http-nio-8081-exec-1] c.g.m.m.UserMapper.selectUserByUsername  : ==> Parameters: test(String)
+2019-12-28 23:44:13.303 DEBUG 55963 --- [http-nio-8081-exec-1] c.g.m.m.UserMapper.selectUserByUsername  : <==      Total: 1
+2019-12-28 23:44:26.988 DEBUG 55963 --- [http-nio-8081-exec-5] c.g.m.m.P.selectAllBrand_COUNT           : ==>  Preparing: SELECT count(0) FROM mall.pms_brand 
+2019-12-28 23:44:26.989 DEBUG 55963 --- [http-nio-8081-exec-5] c.g.m.m.P.selectAllBrand_COUNT           : ==> Parameters: 
+2019-12-28 23:44:27.077 DEBUG 55963 --- [http-nio-8081-exec-5] c.g.m.m.P.selectAllBrand_COUNT           : <==      Total: 1
+2019-12-28 23:44:27.082 DEBUG 55963 --- [http-nio-8081-exec-5] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==>  Preparing: select * from mall.pms_brand LIMIT ? 
+2019-12-28 23:44:27.083 DEBUG 55963 --- [http-nio-8081-exec-5] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==> Parameters: 10(Integer)
+2019-12-28 23:44:27.137 DEBUG 55963 --- [http-nio-8081-exec-5] c.g.m.m.PmsBrandMapper.selectAllBrand    : <==      Total: 10
+2019-12-28 23:44:29.975 DEBUG 55963 --- [http-nio-8081-exec-7] c.g.m.m.P.updateFactoryStatus            : ==>  Preparing: update pms_brand set factory_status = ? where id = ? 
+2019-12-28 23:44:29.979 DEBUG 55963 --- [http-nio-8081-exec-7] c.g.m.m.P.updateFactoryStatus            : ==> Parameters: 1(Integer), 1(Long)
+2019-12-28 23:44:30.084 DEBUG 55963 --- [http-nio-8081-exec-7] c.g.m.m.P.updateFactoryStatus            : <==    Updates: 1
+2019-12-28 23:44:31.164 DEBUG 55963 --- [http-nio-8081-exec-8] c.g.m.m.P.updateFactoryStatus            : ==>  Preparing: update pms_brand set factory_status = ? where id = ? 
+2019-12-28 23:44:31.165 DEBUG 55963 --- [http-nio-8081-exec-8] c.g.m.m.P.updateFactoryStatus            : ==> Parameters: 0(Integer), 1(Long)
+2019-12-28 23:44:31.263 DEBUG 55963 --- [http-nio-8081-exec-8] c.g.m.m.P.updateFactoryStatus            : <==    Updates: 1
+2019-12-28 23:44:33.464 DEBUG 55963 --- [http-nio-8081-exec-9] c.g.m.m.P.updateFactoryStatus            : ==>  Preparing: update pms_brand set factory_status = ? where id = ? 
+2019-12-28 23:44:33.465 DEBUG 55963 --- [http-nio-8081-exec-9] c.g.m.m.P.updateFactoryStatus            : ==> Parameters: 1(Integer), 6(Long)
+2019-12-28 23:44:33.561 DEBUG 55963 --- [http-nio-8081-exec-9] c.g.m.m.P.updateFactoryStatus            : <==    Updates: 1
+2019-12-28 23:44:34.322 DEBUG 55963 --- [http-nio-8081-exec-10] c.g.m.m.P.updateFactoryStatus            : ==>  Preparing: update pms_brand set factory_status = ? where id = ? 
+2019-12-28 23:44:34.322 DEBUG 55963 --- [http-nio-8081-exec-10] c.g.m.m.P.updateFactoryStatus            : ==> Parameters: 0(Integer), 6(Long)
+2019-12-28 23:44:34.448 DEBUG 55963 --- [http-nio-8081-exec-10] c.g.m.m.P.updateFactoryStatus            : <==    Updates: 1
+2019-12-28 23:45:09.675  INFO 55963 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-28 23:45:09.677  INFO 55963 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-28 23:45:09.683  INFO 55963 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-28 23:45:13.190  INFO 56516 --- [restartedMain] com.gouzhong1223.mall.MallApplication    : Starting MallApplication on localhost with PID 56516 (/Users/qingsong/Projects/IDEA/2020-01/mall/target/classes started by qingsong in /Users/qingsong/Projects/IDEA/2020-01/mall)
+2019-12-28 23:45:13.193 DEBUG 56516 --- [restartedMain] com.gouzhong1223.mall.MallApplication    : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-28 23:45:13.193  INFO 56516 --- [restartedMain] com.gouzhong1223.mall.MallApplication    : The following profiles are active: dev
+2019-12-28 23:45:13.280  INFO 56516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-28 23:45:13.280  INFO 56516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-28 23:45:14.337  INFO 56516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-28 23:45:14.341  INFO 56516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2019-12-28 23:45:14.399  INFO 56516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2019-12-28 23:45:14.804  INFO 56516 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-28 23:45:15.092  INFO 56516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-12-28 23:45:15.101  INFO 56516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-28 23:45:15.101  INFO 56516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-28 23:45:15.170  INFO 56516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-28 23:45:15.170  INFO 56516 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1890 ms
+2019-12-28 23:45:16.005  INFO 56516 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-12-28 23:45:16.108  INFO 56516 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-28 23:45:16.139  INFO 56516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-28 23:45:16.217  WARN 56516 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-12-28 23:45:16.578  INFO 56516 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-28 23:45:16.593  INFO 56516 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-28 23:45:16.624  INFO 56516 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-28 23:45:16.675  INFO 56516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-12-28 23:45:16.678  INFO 56516 --- [restartedMain] com.gouzhong1223.mall.MallApplication    : Started MallApplication in 3.954 seconds (JVM running for 4.871)
+2019-12-28 23:45:22.736  INFO 56516 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-28 23:45:22.736  INFO 56516 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-28 23:45:22.744  INFO 56516 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-12-28 23:45:23.556  INFO 56516 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-28 23:45:24.249  INFO 56516 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-28 23:45:24.299 DEBUG 56516 --- [http-nio-8081-exec-4] c.g.m.m.P.selectAllBrand_COUNT           : ==>  Preparing: SELECT count(0) FROM mall.pms_brand 
+2019-12-28 23:45:24.323 DEBUG 56516 --- [http-nio-8081-exec-4] c.g.m.m.P.selectAllBrand_COUNT           : ==> Parameters: 
+2019-12-28 23:45:24.404 DEBUG 56516 --- [http-nio-8081-exec-4] c.g.m.m.P.selectAllBrand_COUNT           : <==      Total: 1
+2019-12-28 23:45:24.407 DEBUG 56516 --- [http-nio-8081-exec-4] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==>  Preparing: select * from mall.pms_brand LIMIT ? 
+2019-12-28 23:45:24.408 DEBUG 56516 --- [http-nio-8081-exec-4] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==> Parameters: 10(Integer)
+2019-12-28 23:45:24.473 DEBUG 56516 --- [http-nio-8081-exec-4] c.g.m.m.PmsBrandMapper.selectAllBrand    : <==      Total: 10
+2019-12-28 23:45:25.981 DEBUG 56516 --- [http-nio-8081-exec-6] c.g.m.m.P.updateFactoryStatus            : ==>  Preparing: update pms_brand set factory_status = ? where id = ? 
+2019-12-28 23:45:25.981 DEBUG 56516 --- [http-nio-8081-exec-6] c.g.m.m.P.updateFactoryStatus            : ==> Parameters: 1(Integer), 1(Long)
+2019-12-28 23:45:26.078 DEBUG 56516 --- [http-nio-8081-exec-6] c.g.m.m.P.updateFactoryStatus            : <==    Updates: 1
+2019-12-28 23:45:26.929 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.P.updateFactoryStatus            : ==>  Preparing: update pms_brand set factory_status = ? where id = ? 
+2019-12-28 23:45:26.930 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.P.updateFactoryStatus            : ==> Parameters: 0(Integer), 1(Long)
+2019-12-28 23:45:27.030 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.P.updateFactoryStatus            : <==    Updates: 1
+2019-12-28 23:45:27.902 DEBUG 56516 --- [http-nio-8081-exec-8] c.g.m.m.P.updateFactoryStatus            : ==>  Preparing: update pms_brand set factory_status = ? where id = ? 
+2019-12-28 23:45:27.903 DEBUG 56516 --- [http-nio-8081-exec-8] c.g.m.m.P.updateFactoryStatus            : ==> Parameters: 1(Integer), 6(Long)
+2019-12-28 23:45:28.001 DEBUG 56516 --- [http-nio-8081-exec-8] c.g.m.m.P.updateFactoryStatus            : <==    Updates: 1
+2019-12-28 23:45:29.382 DEBUG 56516 --- [http-nio-8081-exec-9] c.g.m.m.P.updateFactoryStatus            : ==>  Preparing: update pms_brand set factory_status = ? where id = ? 
+2019-12-28 23:45:29.383 DEBUG 56516 --- [http-nio-8081-exec-9] c.g.m.m.P.updateFactoryStatus            : ==> Parameters: 1(Integer), 1(Long)
+2019-12-28 23:45:29.488 DEBUG 56516 --- [http-nio-8081-exec-9] c.g.m.m.P.updateFactoryStatus            : <==    Updates: 1
+2019-12-28 23:45:32.230 DEBUG 56516 --- [http-nio-8081-exec-3] c.g.m.m.P.selectAllBrand_COUNT           : ==>  Preparing: SELECT count(0) FROM mall.pms_brand 
+2019-12-28 23:45:32.231 DEBUG 56516 --- [http-nio-8081-exec-3] c.g.m.m.P.selectAllBrand_COUNT           : ==> Parameters: 
+2019-12-28 23:45:32.280 DEBUG 56516 --- [http-nio-8081-exec-3] c.g.m.m.P.selectAllBrand_COUNT           : <==      Total: 1
+2019-12-28 23:45:32.281 DEBUG 56516 --- [http-nio-8081-exec-3] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==>  Preparing: select * from mall.pms_brand LIMIT ? 
+2019-12-28 23:45:32.281 DEBUG 56516 --- [http-nio-8081-exec-3] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==> Parameters: 10(Integer)
+2019-12-28 23:45:32.336 DEBUG 56516 --- [http-nio-8081-exec-3] c.g.m.m.PmsBrandMapper.selectAllBrand    : <==      Total: 10
+2019-12-28 23:45:42.186 DEBUG 56516 --- [http-nio-8081-exec-5] c.g.m.m.P.selectByPrimaryKey             : ==>  Preparing: select id, `name`, first_letter, sort, factory_status, show_status, product_count, product_comment_count, logo, big_pic, brand_story from pms_brand where id = ? 
+2019-12-28 23:45:42.187 DEBUG 56516 --- [http-nio-8081-exec-5] c.g.m.m.P.selectByPrimaryKey             : ==> Parameters: 5(Long)
+2019-12-28 23:45:42.237 DEBUG 56516 --- [http-nio-8081-exec-5] c.g.m.m.P.selectByPrimaryKey             : <==      Total: 1
+2019-12-28 23:46:08.135 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.P.updateByPrimaryKeySelective    : ==>  Preparing: update pms_brand SET `name` = ?, first_letter = ?, sort = ?, factory_status = ?, show_status = ?, logo = ?, brand_story = ? where id = ? 
+2019-12-28 23:46:08.138 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.P.updateByPrimaryKeySelective    : ==> Parameters: 丹儿(String), D(String), 20(Integer), 1(Integer), 1(Integer), http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/images/20180607/timg (4).jpg(String), 丹儿的故事(String), 5(Long)
+2019-12-28 23:46:08.237 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.P.updateByPrimaryKeySelective    : <==    Updates: 1
+2019-12-28 23:46:08.717 DEBUG 56516 --- [http-nio-8081-exec-9] c.g.m.m.P.selectAllBrand_COUNT           : ==>  Preparing: SELECT count(0) FROM mall.pms_brand 
+2019-12-28 23:46:08.718 DEBUG 56516 --- [http-nio-8081-exec-9] c.g.m.m.P.selectAllBrand_COUNT           : ==> Parameters: 
+2019-12-28 23:46:08.766 DEBUG 56516 --- [http-nio-8081-exec-9] c.g.m.m.P.selectAllBrand_COUNT           : <==      Total: 1
+2019-12-28 23:46:08.767 DEBUG 56516 --- [http-nio-8081-exec-9] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==>  Preparing: select * from mall.pms_brand LIMIT ? 
+2019-12-28 23:46:08.768 DEBUG 56516 --- [http-nio-8081-exec-9] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==> Parameters: 10(Integer)
+2019-12-28 23:46:08.819 DEBUG 56516 --- [http-nio-8081-exec-9] c.g.m.m.PmsBrandMapper.selectAllBrand    : <==      Total: 10
+2019-12-28 23:46:35.390 DEBUG 56516 --- [http-nio-8081-exec-1] c.g.m.m.P.selectAllBrand_COUNT           : ==>  Preparing: SELECT count(0) FROM mall.pms_brand 
+2019-12-28 23:46:35.390 DEBUG 56516 --- [http-nio-8081-exec-1] c.g.m.m.P.selectAllBrand_COUNT           : ==> Parameters: 
+2019-12-28 23:46:35.437 DEBUG 56516 --- [http-nio-8081-exec-1] c.g.m.m.P.selectAllBrand_COUNT           : <==      Total: 1
+2019-12-28 23:46:35.439 DEBUG 56516 --- [http-nio-8081-exec-1] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==>  Preparing: select * from mall.pms_brand LIMIT ? 
+2019-12-28 23:46:35.439 DEBUG 56516 --- [http-nio-8081-exec-1] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==> Parameters: 10(Integer)
+2019-12-28 23:46:35.488 DEBUG 56516 --- [http-nio-8081-exec-1] c.g.m.m.PmsBrandMapper.selectAllBrand    : <==      Total: 10
+2019-12-28 23:46:43.065 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.P.selectAllBrand_COUNT           : ==>  Preparing: SELECT count(0) FROM mall.pms_brand 
+2019-12-28 23:46:43.066 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.P.selectAllBrand_COUNT           : ==> Parameters: 
+2019-12-28 23:46:43.115 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.P.selectAllBrand_COUNT           : <==      Total: 1
+2019-12-28 23:46:43.116 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==>  Preparing: select * from mall.pms_brand LIMIT ? 
+2019-12-28 23:46:43.117 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.PmsBrandMapper.selectAllBrand    : ==> Parameters: 10(Integer)
+2019-12-28 23:46:43.173 DEBUG 56516 --- [http-nio-8081-exec-7] c.g.m.m.PmsBrandMapper.selectAllBrand    : <==      Total: 10
