@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 /**
  * @Author : Gouzhong
  * @Blog : www.gouzhong1223.com
- * @Description : TODO
+ * @Description : Order实体类
  * @Date : create by QingSong in 2019-12-28 10:46 下午
  * @Email : gouzhong1223@gmail.com
  * @Since : JDK 1.8

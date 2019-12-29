@@ -13,13 +13,13 @@ import lombok.NoArgsConstructor;
 /**
  * @Author : Gouzhong
  * @Blog : www.gouzhong1223.com
- * @Description : TODO
+ * @Description : Brand实体类
  * @Date : create by QingSong in 2019-12-28 10:48 下午
  * @Email : gouzhong1223@gmail.com
  * @Since : JDK 1.8
  * @PackageName : com.gouzhong1223.mall.pojo
  * @ProjectName : mall
- * @Version : ${VERSION}
+ * @Version : 1.0.0
  */
 @ApiModel(value = "com-gouzhong1223-mall-pojo-PmsBrand")
 @Data
@@ -39,7 +39,10 @@ public class PmsBrand implements Serializable {
     @ApiModelProperty(value = "首字母")
     private String firstLetter;
 
-    @ApiModelProperty(value = "")
+    /**
+     * 排序
+     */
+    @ApiModelProperty(value = "排序")
     private Integer sort;
 
     /**
@@ -48,7 +51,10 @@ public class PmsBrand implements Serializable {
     @ApiModelProperty(value = "是否为品牌制造商：0->不是；1->是")
     private Integer factoryStatus;
 
-    @ApiModelProperty(value = "")
+    /**
+     * 是否显示
+     */
+    @ApiModelProperty(value = "是否显示")
     private Integer showStatus;
 
     /**
